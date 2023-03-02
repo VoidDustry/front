@@ -1,8 +1,15 @@
 <script setup lang="ts">
-
+import Title from "@/components/Title.vue";
 </script>
 
 <template>
     <main>
+        <Title/>
     </main>
 </template>
+
+<style>
+main {
+    text-align: center;
+}
+</style>

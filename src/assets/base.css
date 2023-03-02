@@ -4,6 +4,8 @@
     --color-accent: #8353d9;
     --background-brightness: .45;
     --header-background: rgba(0, 0, 0, .2);
+
+    color-scheme: dark;
 }
 
 *,
