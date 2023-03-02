@@ -1,6 +1,9 @@
 :root {
     --color-background: #222;
-    --color-text: #eee;
+    --color-text: #bbb;
+    --color-accent: #8353d9;
+    --background-brightness: .45;
+    --header-background: rgba(0, 0, 0, .2);
 }
 
 *,
