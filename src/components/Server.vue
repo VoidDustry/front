@@ -53,8 +53,11 @@ export default defineComponent({
             <div>
                 <b>Address</b>: <code>{{ info.address }}</code>
                 <div v-if="$data.serverStatus" v-for="(value, key) in $data.serverStatus">
-                    <b>{{ key[0].toUpperCase() + key.slice(1) }}</b>: <code>{{ value.toString().replace(/\[((?:black|white|(?:(?:dark|light)_)?gr[ae]y|blue|navy|royal|slate|sky|cyan|teal|green|acid|lime|forest|olive|yellow|gold|goldenrod|orange|brown|tan|brick|red|scarlet|crimson|coral|salmon|pink|magenta|purple|violet|maroon)|(?:#[a-f0-9]{2,6}))?]/gi, "") }}</code>
+                    <b>{{ key[0].toUpperCase() + key.slice(1) }}</b>: <code>{{
+                        value.toString().replace(/\[((?:black|white|(?:(?:dark|light)_)?gr[ae]y|blue|navy|royal|slate|sky|cyan|teal|green|acid|lime|forest|olive|yellow|gold|goldenrod|orange|brown|tan|brick|red|scarlet|crimson|coral|salmon|pink|magenta|purple|violet|maroon)|(?:#[a-f0-9]{2,6}))?]/gi, "")
+                    }}</code>
                 </div>
+                <h1 class="error" v-if="!$data.serverStatus && $props.info.status_url">Server offline</h1>
             </div>
         </div>
     </div>
@@ -78,5 +81,11 @@ h2 {
     background: var(--element-background);
     box-shadow: var(--box-shadow) var(--shadow-color);
     text-align: center;
+}
+
+.error {
+    padding-top: 16px;
+    color: #ff5050;
+    font-weight: normal;
 }
 </style>

@@ -23,10 +23,9 @@ export default defineComponent({
 </script>
 
 <template>
-<div id="servers" v-if="$data.servers" v-for="server in $data.servers">
-
-    <Server :info="server" />
-</div>
+    <div id="servers" v-if="$data.servers">
+        <Server v-for="server in $data.servers" :info="server"/>
+    </div>
 </template>
 
 <style scoped>
