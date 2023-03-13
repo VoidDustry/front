@@ -19,18 +19,24 @@ export default {
 </template>
 
 <style scoped>
+h1, h2 {
+    color: var(--color-accent);
+    font-family: "Iceberg", "Arial", sans-serif;
+    animation: neon-text 3s infinite;
+}
+
 h1 {
     font-size: 5em;
     margin-top: 1em;
-    color: var(--color-accent);
-    font-family: "Iceberg", "Arial", sans-serif;
     font-weight: bold;
 }
 
 h2 {
     font-size: 2em;
-    color: var(--color-accent);
-    font-family: "Iceberg", "Arial", sans-serif;
+}
+
+a {
+    animation: neon-text 3s infinite;
 }
 
 #question {

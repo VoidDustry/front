@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 export default {
     name: "Title"
 }
@@ -15,6 +15,7 @@ export default {
     padding: 5% 0 2%;
 }
 h1 {
+    animation: neon-text 3s infinite;
     font-size: 5em;
     margin-block-end: .1em;
     color: var(--color-accent);

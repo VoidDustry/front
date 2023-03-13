@@ -21,8 +21,13 @@ h1 {
     font-size: 5em;
     margin-top: 1em;
     color: var(--color-accent);
+    animation: neon-text 3s infinite;
     font-family: "Iceberg", "Arial", sans-serif;
     font-weight: bold;
+}
+
+a {
+    animation: neon-text 3s infinite;
 }
 
 #question {
