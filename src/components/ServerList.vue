@@ -12,7 +12,7 @@ export default defineComponent({
     },
     methods: {
         fetch() {
-            axios.get("http://10.8.0.4:4600/servers/list")
+            axios.get("https://voiddustry.ddns.net/api/servers/list")
                 .then(response => (this.servers = response.data));
         }
     },
