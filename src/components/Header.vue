@@ -1,10 +1,10 @@
-<script>
-import IconDiscord from "@/components/icons/IconDiscord.vue";
+<script lang="ts">
+import IconRevolt from "@/components/icons/IconRevolt.vue";
 import IconGithub from "@/components/icons/IconGithub.vue";
 
 export default {
     name: "Header",
-    components: { IconGithub, IconDiscord }
+    components: { IconGithub, IconRevolt}
 }
 </script>
 
@@ -14,8 +14,8 @@ export default {
             <a href="https://github.com/VoidDustry" title="GitHub">
                 <IconGithub/>
             </a>
-            <a href="https://discord.gg/Sc9C9n7Dj7" title="Discord">
-                <IconDiscord/>
+            <a href="https://rvlt.gg/BCXXz8Xj" title="Revolt">
+                <IconRevolt/>
             </a>
         </div>
     </div>
